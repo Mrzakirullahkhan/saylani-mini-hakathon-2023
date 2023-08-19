@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="profile.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Lora:ital@0;1&family=Open+Sans:wght@300&family=PT+Serif&family=Playfair+Display&family=Roboto+Slab:wght@100&display=swap"
+      rel="stylesheet">
+    <!-- ... -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    
+    <!-- ye mera navigation wala kaam hai  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="my-navigation-bar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../dashboard/dashboard.html" style="color: white;">Personal blogging App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+              <li>
+    
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;" id="loggedInUser">zakir khan</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="../loginfolder/login.html" style="color: white;" id="logout">log out</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+      <!-- yha mera navigation ka kaam khatam hogya  -->
+      <div class="container" style="width: 100%;">
+        <h1 style="margin-top: 20px; background-color: rgb(253, 253, 253);">Profile</h1>
+
+
+        <div id="user-profile-div">
+            <!-- for img -->
+            <div class="card" style="width: 15rem; border: none;" id="myProfileImg">
+                <img src="Admin-Profile-Vector-PNG-Clipart.png" class="card-img-top" alt="..." style="cursor: pointer;" id="imgEdit">
+                <a href="" id="editImg">edit image</a>
+              </div>
+              <div><h1 id="userName" style="cursor: pointer;"></h1>
+            <a href="" id="editName">edit name</a></div>
+              <h1 id="userpassward">passward </h1>
+              <!-- passward create krne k liye -->
+              <div class="col-auto" style="width: 30%;">
+                <input type="password" id="oldpassward" class="form-control" aria-describedby="passwordHelpInline" placeholder="Old passward">
+              </div>
+              <!-- new passwrd -->
+              <div class="col-auto mt-3" style="width: 30%;">
+                <input type="password" id="newpassward" class="form-control" aria-describedby="passwordHelpInline" placeholder="New passward">
+              </div>
+            
+              <!-- btn -->
+              <button type="button" class="btn btn-primary mt-4" id="passward-update" style="background-color: #7749f8;">Update passward</button>
+        </div>
+      </div>
+
+
+    <script type="module" src="profile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif !important;
+}
+
+
+#my-navigation-bar{
+    background-color:#7749f8 !important;
+    color: white !important;
+}
+#user-profile-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid transparent;
+    background-color: #a2cadd;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    width: 100%;
+
+}
+#logout{
+    border: 2px solid white;
+    border-radius: 4px;
+}
+

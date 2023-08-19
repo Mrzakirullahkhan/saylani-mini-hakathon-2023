@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Lora:ital@0;1&family=Open+Sans:wght@300&family=PT+Serif&family=Playfair+Display&family=Roboto+Slab:wght@100&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+  <!-- cdn fontowsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+  <!-- ye mera navigation baar hai  -->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="my-navigation-bar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: white;">Personal blogging App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0">
+          <li>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../userprofile/profile.html" style="color: white;"  id="loggedInUser">zakir khan</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../loginfolder/login.html" style="color: white;" id="logout">log out</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <!-- yaha pe navigation khatam hogya  -->
+  <div class="container">
+    <h1 style="margin-top: 10px; background-color: rgb(253, 253, 253);">Dashboard</h1>
+
+
+
+    <!-- ye niche title and description k liye hai  -->
+    <!-- .... -->
+
+  <div id="post-area">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Title</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Write title..">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label" >Blogs</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="What is in your mind..."></textarea>
+    </div>
+    <button type="button" class="btn btn-primary" style="background-color: #7749f8;" id="publish-post">Publish blog</button>
+  </div>
+    <!-- yaha pe posting krne wala kaam khatam  hogya  -->
+
+    <!-- ab yaha me blog k liye kaam krunga  -->
+
+    <h1 style="margin-top: 30px; background-color: rgb(255, 255, 255);">My blogs</h1>
+
+    <!-- ab yha jo blog post hogya asko show krna ka kaam yha hai -->
+
+    <div class="postedSection" style="width: 100%;">
+      <!-- <div class="myMaindiv">
+        <div class="card mb-3" style="width: 25%; line-height: 10px; border: none;" >
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="Admin-Profile-Vector-PNG-Clipart.png" class="img-fluid rounded-start" alt="..." width="80px" style="margin-top: 8px; margin-left: 5px;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title" id="loggedInUser">Card title</h5>
+                <p class="card-text">hello zakir</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p id="paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis a dolorum repellendus corrupti reprehenderit iste amet beatae praesentium repellat, facere ipsum in deleniti suscipit dicta ea tenetur accusantium, maiores voluptatem.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis a dolorum repellendus corrupti reprehenderit iste amet beatae praesentium repellat, facere ipsum in deleniti suscipit dicta ea tenetur accusantium, maiores voluptatem.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis a dolorum repellendus corrupti reprehenderit iste amet beatae praesentium repellat, facere ipsum in deleniti suscipit dicta ea tenetur accusantium, maiores voluptatem.
+        </p>
+        <div id="myLinks">
+          <a href="#" id="delete">delete</a>
+          <a href="#" id="edit">edit</a>
+        </div> -->
+      </div>
+     
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <script type="module" src="dashboard.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+  integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
